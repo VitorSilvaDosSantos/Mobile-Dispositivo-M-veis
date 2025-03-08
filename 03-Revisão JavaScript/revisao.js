@@ -54,7 +54,6 @@ console.log(estritamenteIgual);
 
 // Estrutura de controle
 
-
 if (idade >= 18) {
     console.log("Maior Idade");
 }
@@ -77,4 +76,78 @@ if (idade >= 18) {
 
 //Operador Ternario
 const checkMaiorDeIdade = idade >= 18 ? "Maior de idade" : "Menor de Idade";
-console.log(checkMaiorDeIdade)
+console.log(checkMaiorDeIdade);
+
+// Arrays 
+
+let frutas = ["maçã", "Banana", "Uva"];
+console.log(frutas[0]);
+console.log(frutas[1]);
+console.log(frutas[5]);
+console.log(frutas[frutas.length]);
+
+frutas.push("Laranja");
+
+frutas.forEach((fruta) => { 
+    console.log(fruta);
+});
+
+frutas.pop();
+console.log(frutas);
+
+// Objetos
+let pessoa = {
+    nome: "Vitor",
+    idade: 27,
+    altura: 178,
+    peso: 82
+};
+
+// Adicionando um novo atributo (propriedade) ao objeto
+pessoa.email = "vitorfenix49@gmail.com";
+console.log(pessoa);
+
+// Remove um atributo
+delete pessoa.email;
+console.log(pessoa);
+
+// Desestruturar o objeto pessoa
+let { altura, peso } = pessoa;
+console.log(altura);
+console.log(pessoa);
+
+// Propagação de objetos
+let endereco = {
+    cidade: "Ceilândia",
+    uf: "DF"
+};
+
+let pessoaCompleto = { ...pessoa, ...endereco };
+console.log(pessoaCompleto);
+
+// Função 
+function somar(numA, numB) {
+    return numA + numB;
+}
+console.log(somar(2, 2));
+console.log(somar(10, 2));
+console.log(somar(5, 5));
+
+
+function saudacao(nome) {
+    console.log("Olá " + nome)
+}
+saudacao("Vitor")
+
+// Função anônima
+let subtrair = function (numA, numB) {
+    return numA - numB
+}
+
+console.log (subtrair(4,2))
+
+// Arrow function
+let multiplicar = (numA, numB) => numA * numB
+console.log(multiplicar (2, 10))
+
+// 
