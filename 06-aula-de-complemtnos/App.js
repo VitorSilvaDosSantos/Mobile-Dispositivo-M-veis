@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { PaperProvider, Card, Title, Paragraph, Divider, Button } from 'react-native-paper';
 
 
-export default function App() {
+export default function App() { 
   return (
     <PaperProvider>
 

@@ -22,14 +22,14 @@ export default function App() {
         <Text style={{ fontSize: 50, fontStyle: "italic" }}>Olá {nome}</Text>
         
         {/* Resultado de 2 + 4 */}
-        <Text style={{ fontSize: 30 }}>Resultado: {2 + 4}</Text>
+        <Text style={{ fontSize: 30 }}>Mobile: {2 + 4}</Text>
         
         {/* Botão */}
         <Button title="Enviar" onPress={alerta} />
         
         {/* Imagens com espaçamento */}
         <Image
-          source={{ uri: "https://cdn.pixabay.com/photo/2021/10/11/18/58/lake-6701636_1280.jpg" }}
+          source={{ uri: "https://cdn.pixabay.com/photo/2012/04/12/23/47/car-30984_1280.png" }}
           style={styles.image}
         />
         <View style={styles.spacer} />
